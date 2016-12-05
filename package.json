@@ -1,0 +1,31 @@
+{
+  "name": "responsive-nav-pocket-calculator",
+  "version": "1.0.0",
+  "description": "a plain js+css menu that shows as many items as there is space available for, then hides the rest in an expandable burger menu.",
+  "main": "rnpc.js",
+  "dependencies": {
+    "babel-core": "^6.18.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-latest": "^6.16.0"
+  },
+  "scripts": {
+    "compile": "babel --presets latest -d lib/ src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsticks/responsive-nav-pocket-calculator.git"
+  },
+  "keywords": [
+    "functional"
+  ],
+  "author": "robert alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsticks/responsive-nav-pocket-calculator/issues"
+  },
+  "homepage": "https://github.com/itsticks/responsive-nav-pocket-calculator#readme"
+}
