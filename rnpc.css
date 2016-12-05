@@ -1,25 +1,22 @@
-*{padding:0;margin:0;}
-
-header div#siteTitle {
-	float:left;
-}
 #rnpcNav {
-	width:calc(100% - 150px);
-	position: relative;
-	float:right;
+    width:calc(100% - 150px);
+    position: relative;
+    float:right;
     transition:none;
 }
 #rnpcNav ul {
     max-width: calc(100% - 25px);
 }
 #rnpcNav ul li {
-	display:inline-block;
-	font-size: 2em;
-	padding:0 0.5em 0 0;
-	white-space: nowrap;
+    display:inline-block;
+    font-size: 2em;
+    padding:0 0.5em 0 0;
+    white-space: nowrap;
 }
+
+/*the full nav overlay*/
 #rnpcNav[data-rnpc-toggle-on="true"] {
-	position: fixed;
+    position: fixed;
     overflow-y:scroll;
     top: 0px;
     left: 0;
@@ -36,10 +33,11 @@ header div#siteTitle {
 
 #rnpcNav[data-rnpc-toggle-on="true"] ul li,
 #rnpcNav[data-rnpc-toggle-on="true"] ul li a {
-	display:block !important;
+    display:block !important;
     width:100%;
 }
 
+/*the toggle*/
 #rnpcToggle {
     position:absolute;
     display: table;
@@ -54,7 +52,6 @@ header div#siteTitle {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius:5px;
-    transition: all 0.2s ease;
     text-align:center;
     cursor:pointer;
 }
@@ -64,11 +61,11 @@ header div#siteTitle {
 }
 
 #rnpcToggle:hover{
-	border-radius:15px;
+    border-radius:15px;
 }
 
 #rnpcToggle span {
-	display: table-cell;
+    display: table-cell;
     vertical-align: bottom;
     background-color: rgba(0,0,0,0.5);
     font-size: 1.2em;
