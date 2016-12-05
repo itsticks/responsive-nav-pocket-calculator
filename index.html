@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>responsive nav Pocket Calculator</title>
+<link rel="stylesheet" href="rnpc.css">
+<style>
+body{font-family: sans-serif;}
+.myStyles header nav ul li a {
+text-decoration:none;
+color:black;
+padding:5px;
+border-radius:2px;
+}
+.myStyles header nav ul li a:hover {
+color:white;
+background:black;
+}
+</style>
+</head>
+
+<body class="myStyles">
+<header>
+<div id="siteTitle"><h1>Site Title</h1></div>
+<nav id="rnpcNav">
+<ul>
+<li><a href="#">link a</a></li>
+<li><a href="#">link b</a></li>
+<li><a href="#">link c</a></li>
+<li><a href="#">link d</a></li>
+<li><a href="#">link e</a></li>
+<li><a href="#">link c</a></li>
+<li><a href="#">link b</a></li>
+<li><a href="#">link c</a></li>
+<li><a href="#">link d</a></li>
+<li><a href="#">link d</a></li>
+</ul>
+</nav>
+<div id="rnpcToggle"></div>
+</header>
+<script src="rnpc.js"></script>
+<script>
+const nav = document.getElementById("rnpcNav"),
+toggle = document.getElementById("rnpcToggle")
+rnpc(nav, toggle)
+window.onresize = (e) => rnpc(nav,toggle)
+toggle.onclick = (e) => rnpcToggle(nav,toggle)
+</script>
+</body>
+</html>
