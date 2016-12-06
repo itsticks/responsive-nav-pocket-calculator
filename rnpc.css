@@ -48,7 +48,7 @@
     padding:5px;
     font-size:0.7em;
     color:white;
-    background-image: url('http://www.pera-soho.com/wp-content/themes/pera_soho/images/burger-menu.png');
+    background-image: url('img/burger.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius:5px;
@@ -57,7 +57,7 @@
 }
 
 #rnpcToggle[data-rnpc-toggle-on="true"] {
-    background-image: url('http://cdn.1001freedownloads.com/icon/thumb/33/cross-24-512.png');
+    background-image: url('img/close.png');
 }
 
 #rnpcToggle:hover{
