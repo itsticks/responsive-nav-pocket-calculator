@@ -10,10 +10,14 @@
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-polyfill": "^6.16.0",
-    "babel-preset-latest": "^6.16.0"
+    "babel-preset-latest": "^6.16.0",
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
   },
   "scripts": {
     "compile": "babel --presets latest -d lib/ src/",
+     "build-css": "node-sass --output-style compressed -o css scss",
+     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
