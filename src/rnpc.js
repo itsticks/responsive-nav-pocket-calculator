@@ -1,4 +1,4 @@
-require("babel-polyfill");
+// require("babel-polyfill");
 
 const rnpc = (nav, toggle, minItemThreshold = 3) => {
     const ul = nav.getElementsByTagName('ul')[0],
