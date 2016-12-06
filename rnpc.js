@@ -9,11 +9,11 @@ const rnpc = (nav, toggle, minItemThreshold = 3) => {
     toggle.style.display = "table"
     items.forEach((x) => x.style.display = "inline-block")
     let pc = items.reduce((a,x) => {
-        const topOfItem = x.getBoundingClientRect().top
+	    const topOfItem = x.getBoundingClientRect().top
         if(topOfItem > topOfUl){
-            x.style.display = "none"
-            return a+1
-        }
+		    x.style.display = "none"
+		    return a+1
+	    }
       return a
     },0)
     if(pc>items.length-minItemThreshold){
