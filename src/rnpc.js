@@ -1,8 +1,8 @@
-var from = require('array.from');
+require("babel-polyfill");
 
 const rnpc = (nav, toggle, minItemThreshold = 3) => {
     const ul = nav.getElementsByTagName('ul')[0],
-    items = from(ul.getElementsByTagName('li')),
+    items = Array.from(ul.getElementsByTagName('li')),
     topOfUl = ul.getBoundingClientRect().top
     let operator = "+"
 
